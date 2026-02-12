@@ -13,5 +13,8 @@
   "license": "ISC",
   "devDependencies": {
     "protobufjs-cli": "^2.0.0"
+  },
+  "dependencies": {
+    "protobufjs": "^7.5.4"
   }
 }
