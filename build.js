@@ -21,7 +21,7 @@ const ABS_REMOTE_PROTO_DIR = path.resolve(PROJECT_ROOT, REMOTE_PROTO_DIR);
 // Where protos will be copied inside your Angular project
 const LOCAL_PROTO_DIR = "proto";
 // Final output: compiled JS
-const OUT_DIR = "proto-build";
+const OUT_DIR = "";
 
 function run(cmd) {
   console.log(`> ${cmd}`);
