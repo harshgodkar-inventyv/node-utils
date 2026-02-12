@@ -57,10 +57,10 @@ try {
 
   // Compile protos
   console.log("compiling .proto files...");
-  ensureDir(OUT_DIR);
+//   ensureDir(OUT_DIR);
 
-  run(`npx pbjs -t static-module -w commonjs -p ${ABS_TEMP_DIR} -o ${OUT_DIR}/index.js ${ABS_REMOTE_PROTO_DIR}/*.proto`);
-  run(`npx pbts -o ${OUT_DIR}/index.d.ts ${OUT_DIR}/index.js`);
+  run(`npx pbjs -t static-module -w commonjs -p ${ABS_TEMP_DIR} -o index.js ${ABS_REMOTE_PROTO_DIR}/*.proto`);
+  run(`npx pbts -o index.d.ts index.js`);
 
   console.log("Compilation finished.");
 
